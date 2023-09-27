@@ -1,3 +1,45 @@
 *{
+<<<<<<< Updated upstream
   background-color: aliceblue;
+=======
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("image/denim_outer_3.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.navbar{
+  padding-top: 2%;
+  border-bottom: 1em;
+}
+
+.navbar ul{
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  justify-content: right;
+  gap: 5%;
+  margin-right: 5%;
+}
+
+.navbar li{
+  list-style-type: none;
+}
+
+.navbar a{
+  text-decoration: none;
+}
+
+.landing{
+  width: 100%;
+  height: 80vh;
+  background-image: url("image/landing_bg.jpg");
+>>>>>>> Stashed changes
 }
