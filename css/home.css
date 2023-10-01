@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+}
+
+.bg_img1{
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("image/background2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg_img2{
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("image/denim_outer_3.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.navbar{
+  height: 12%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1em;
+
+}
+
+nav{
+  flex: 1;
+  text-align: right;
+  padding-top: 5%;
+}
+
+.navbar ul{
+  display: flex;
+  align-items: flex-start;
+  justify-content: right;
+  gap: 5%;
+  margin-right: 5%;
+}
+
+.navbar li{
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 40px ;
+}
+
+.navbar a{
+  color: white;
+  text-decoration: none;
+}
+
+.logo{
+  padding-top: 5%;
+  width: 150px;
+  cursor: pointer;
+}
+
+.landing{
+  display: flex;
+  align-items: center;
+  height: 80%;
+}
+
+.text{
+  flex-basis: 50%;
+  margin-left: 10%;
+  justify-content: center;
+}
+
+.text h1{
+  color: white;
+  font-size: 100px;
+}
+
+.text p{
+  color: white;
+  font-size: 20px;
+  line-height: 15px;
+}
+
+.landing .image{
+  margin: 3% 5% 0 0;
+}
+
+.card{
+  width: 200px;
+  height: 230px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 20px 15px;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
+}
+
+.card h4{
+  margin-top: 5px;
+  font-weight: bold;
+  text-shadow: 0 0 5px #949494;
+}
+
+.card1{
+  background-image: url(image/background.jpeg);
+}
+.card2{
+  background-image: url(image/denim_family.jpg);
+}
+.card3{
+  background-image: url(image/jeans_3.jpg);
+}
+.card4{
+  background-image: url(image/denim_jacket.jpg);
+}
+
+.card:hover{
+  transform: translateY(-10px);
+}
+
+
+.footer_bg{
+  height: 50vh;
+  background-color: black;
+}
