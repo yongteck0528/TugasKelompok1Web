@@ -1,0 +1,496 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+  flex: 1;
+  text-align: right;
+  padding-top: 5%;
+}
+
+.navbar ul{
+  display: flex;
+  align-items: flex-start;
+  justify-content: right;
+  gap: 5%;
+  margin-right: 5%;
+}
+
+.navbar li{
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 40px ;
+}
+
+.navbar a{
+    margin-top: 110px;
+  color: white;
+  text-decoration: none;
+}
+
+.logo{
+  padding-top: 5%;
+  width: 150px;
+  cursor: pointer;
+}
+.container-contact-us{
+    width: 100%;
+    height: 40vh;
+    margin-bottom: 50px;
+}
+
+.navbar{
+  height: 12%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1em;
+
+}
+
+.bg_img-contact-us{
+    background-image:  linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.01)),url("image/jeans_2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.title{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+.container-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+    background-color: black;
+    background-position: center;
+    background-size: 100%;
+    
+    background-repeat: no-repeat;
+
+    /* transition: 5; */
+}
+
+.container-1:hover{
+    
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("image/denim_outer_4.jpg");
+
+}
+
+.container-1 h1 h2 p{
+    
+    position: relative;
+    
+}
+
+.container-1 h1 {
+    font-size: 60px;
+    color: white;
+}
+
+.container-1 h2 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.container-1 button{
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 12px 24px;
+    border: 0;
+    color: #fff;
+    background: #000a47;
+    line-height: 1.15;
+    font-size: 16px;
+    :hover {
+        transition: all .1s ease;
+        box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
+    }
+    outline: none;
+                
+    margin-bottom:50px;
+}
+
+.container-1 button:hover{
+    background: white;
+    color: #000a47;
+}
+
+
+
+
+/* Section 2 */
+.container-2{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 60vh;
+    background-color:#dde1e4;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.container-2 h1 h2 p{
+    
+    position: relative;
+    
+}
+
+.container-2 h1 {
+    font-size: 70px;
+    color: black;
+}
+
+.container-2 h2 {
+    font-size: 40px;
+    color: black;
+    margin-bottom: 50px;
+}
+
+.container-2 img{
+    width: 370px;
+    
+}
+
+.container-2 button{
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 12px 24px;
+    border: 0;
+    color: #fff;
+    background: #000a47;
+    line-height: 1.15;
+    font-size: 16px;
+    :hover {
+        transition: all .1s ease;
+        box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
+    }
+    outline: none;
+                
+    margin-bottom:50px;
+}
+
+.container-2 button:hover{
+    background: white;
+    color: #000a47;
+}
+
+
+/* container 3 */
+.shop {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  min-height: 100vh;
+  background: white;
+  width: 100%;
+
+}
+
+
+.container {
+  position: relative;
+  margin: 30px 30px;
+  
+}
+
+.container .card {
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background: #232323;
+  border-radius: 20px;
+  overflow: hidden;
+  /* margin: 0 5px; */
+}
+
+.container .card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1BBFE9;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.container .card:hover:before {
+  clip-path: circle(300px at 80% -20%);
+}
+
+.container .card:after {
+  content: "DENIM";
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  font-size: 12em;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.04);
+
+}
+
+.container .card .imgBx {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+}
+
+.container .card:hover .imgBx {
+  top: 0%;
+  transform: translateY(-25%);
+  /* bug  */
+}
+
+.container .card .imgBx img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 270px;
+}
+
+.container .card .contentBx {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 90;
+}
+
+.container .card:hover .contentBx {
+  height: 210px;
+}
+
+.container .card .contentBx h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.container .card .contentBx .size,
+.container .card .contentBx .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: .5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.container .card:hover .contentBx .size {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: .5s;
+}
+
+.container .card:hover .contentBx .color {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: .6s;
+}
+
+.container .card .contentBx .size h3,
+.container .card .contentBx .color h3 {
+  color: white;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+.container .card .contentBx .size span {
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  margin: 0 5px;
+  transition: .5s;
+  color: #111;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container .card .contentBx .size span:hover {  /* other bug */
+  background: lightblue;
+}
+
+.container .card .contentBx .color span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.container .card .contentBx .color span:nth-child(1) {
+   background: #1BBFE9;
+}
+
+.container .card .contentBx .color span:nth-child(2) {
+   background: #080481;
+}
+
+.container .card .contentBx .color span:nth-child(3) {
+   background: black;
+}
+
+.container .card .contentBx a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: .5s;
+}
+
+.container .card:hover .contentBx a {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: .7s;
+} 
+
+
+footer {
+  background: black;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 50px 0px;
+}
+
+footer .f-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+  grid-gap: 5px;
+}
+
+.footer-center,
+.footer-right {
+  padding-top: 50px;
+}
+
+footer h2 {
+  position: relative;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+footer h2::before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+  width: 150px;
+  height: 2px;
+  background-color: white;
+}
+
+footer li {
+  list-style-type: none;
+}
+
+.footer-left {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.footer-left img {
+  margin: auto;
+  width: 300px;
+  height: 300px;
+}
+
+.footer-center li a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.footer-center li a:hover {
+  color: lightblue;
+}
+
+.icon {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(5, 50px);
+  grid-gap: 20px;
+}
+
+.icon li {
+  list-style-type: none;
+}
+
+.icon li a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: grey;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  border-radius: 40%;
+}
+
+.icon li a img {
+  width: 30px;
+  height: 30px;
+}
+
+.icon li a:hover {
+  background: lightblue;
+}
+
+.copyright {
+  width: 100%;
+  background: rgb(27, 27, 27);
+  padding: 8px 0px;
+  text-align: center;
+  color: white;
+}
