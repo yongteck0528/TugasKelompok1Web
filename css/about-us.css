@@ -79,7 +79,6 @@
       align-content: center; 
       background-color: whitesmoke;
       text-indent: 1in;
-      width: 75%; 
       padding-top: 10px;
   } 
    .about-us-section-background{
@@ -129,7 +128,7 @@
       font-family: Arial, Helvetica, sans-serif; 
       font-weight: bold; 
       color: rgb(99, 15, 3); 
-      font-size: 16px; 
+      font-size: 12px; 
       text-align: justify; 
       text-indent: 1in;
     } 
